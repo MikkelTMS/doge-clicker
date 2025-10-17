@@ -1,9 +1,10 @@
 import { ContentWrapper } from "../../components/ContentWrapper/ContentWrapper"
+import { Layout } from "../../layout/layout.jsx"
 
 export const HomePage = () => {
     return (
-        <ContentWrapper title="Velkommen" hidetitle={true} description="Template til React Apps">
-            <p className="text-blue-600">hey!</p>
+        <ContentWrapper title="Doge Clicker">
+            <Layout/>
         </ContentWrapper>
     )
 }

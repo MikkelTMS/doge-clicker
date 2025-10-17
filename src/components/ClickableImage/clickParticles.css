@@ -1,0 +1,26 @@
+.doge-particle {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, #fff2a8 0%, #ffd700 45%, #e0b300 80%, #b8860b 100%);
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.6), 0 0 14px rgba(255, 215, 0, 0.35);
+  opacity: 0;
+  transform: translate(0, 0) scale(0.6);
+  animation: doge-splash var(--dur, 600ms) ease-out var(--delay, 0ms) forwards;
+}
+
+@keyframes doge-splash {
+  0% {
+    opacity: 0.0;
+    transform: translate(0, 0) scale(0.6);
+    filter: blur(0px);
+  }
+  20% {
+    opacity: 0.9;
+    transform: translate(calc(var(--dx) * 0.15), calc(var(--dy) * 0.15)) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(0.85);
+    filter: blur(1px);
+  }
+}

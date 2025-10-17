@@ -18,6 +18,10 @@ html{
     scroll-behavior: smooth
 }
 
+body{
+    background: radial-gradient(circle, #1FC4E2 0%, #356EAF 100%);
+}
+
 a{
     text-decoration: none;
     color: #000000;
